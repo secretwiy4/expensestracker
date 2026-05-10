@@ -26,7 +26,6 @@ class ExpenseApp extends StatelessWidget {
   }
 }
 
-// --- PEMBUNGKUS AUTH ---
 class AuthWrapper extends StatelessWidget {
   const AuthWrapper({super.key});
 
@@ -47,7 +46,7 @@ class AuthWrapper extends StatelessWidget {
   }
 }
 
-// --- GRADIENT BACKGROUND (FIGMA STYLE) ---
+
 BoxDecoration customGradient() {
   return const BoxDecoration(
     gradient: LinearGradient(
@@ -58,7 +57,7 @@ BoxDecoration customGradient() {
   );
 }
 
-// --- LOGIN SCREEN ---
+
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
 
@@ -123,7 +122,6 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 }
 
-// --- REGISTER SCREEN ---
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({super.key});
 
@@ -180,7 +178,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
   }
 }
 
-// --- DASHBOARD SCREEN (WITH FIGMA LIST STYLE) ---
 class DashboardScreen extends StatefulWidget {
   const DashboardScreen({super.key});
 
@@ -305,7 +302,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
   }
 }
 
-// --- ADD EXPENSE SCREEN ---
+
 class AddExpenseScreen extends StatefulWidget {
   const AddExpenseScreen({super.key});
 
@@ -366,7 +363,6 @@ class _AddExpenseScreenState extends State<AddExpenseScreen> {
   }
 }
 
-// --- REUSABLE INPUT FIELD ---
 Widget _inputField(String hint, TextEditingController controller, {bool isPass = false}) {
   return TextField(
     controller: controller,
